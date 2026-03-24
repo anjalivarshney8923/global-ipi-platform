@@ -20,7 +20,10 @@ import java.util.Map;
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "https://global-ipi-platform.netlify.app"
+})
 public class AuthController {
 
     private final AuthenticationManager authenticationManager;
