@@ -141,3 +141,47 @@ The platform evolved from a basic authentication system into a complete SaaS-bas
 
 ### 🔹 Monitoring Tools Page 
 <img width="1892" height="857" alt="Screenshot 2026-03-24 201734" src="https://github.com/user-attachments/assets/9f8bbbfa-f768-4436-a5df-ff624d7edd0b" />
+
+
+## 🚀 Future Scope  
+
+- 🔄 Integration with real-time global IP databases (WIPO, USPTO, etc.)  
+- 🤖 Advanced AI/ML models for predictive IP trend analysis  
+- 📊 Enhanced analytics dashboard with deep insights and visualizations  
+- 💳 Secure payment gateway integration for subscription plans  
+- 🌐 Multi-language support for global accessibility  
+- 📱 Mobile application for better accessibility  
+- 🔐 Improved security with role-based access control and encryption  
+- ☁️ Cloud deployment (AWS/Azure) for scalability and performance
+
+
+## 👩‍💻 Author  
+
+**Anjali Varshney**  
+
+- 🎓 B.Tech Student  
+- 💻 Passionate about Java Full Stack Development 
+- 🔗 GitHub: https://github.com/anjalivarshney8923  
+- 🔗 LinkedIn: https://www.linkedin.com/in/anjali-varshney-7703302a2/  
+
+---
+
+✨ This project was developed as part of the Infosys Springboard Internship Program.
+
+
+## ⚙️ Installation & Setup  
+
+### 🔹 Clone the Repository  
+```bash
+git clone https://github.com/anjalivarshney8923/global-ipi-platform.git
+cd global-ipi-platform
+
+### 🔹 Frontend Setup (React)
+cd frontend
+npm install
+npm start
+
+### 🔹 Backend Setup (Spring Boot)
+cd backend
+mvn spring-boot:run
+ 
