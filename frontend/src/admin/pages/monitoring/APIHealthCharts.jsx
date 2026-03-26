@@ -10,7 +10,7 @@ const APIHealthCharts = () => {
   const [trafficData, setTrafficData] = useState([]);
   const [responseData, setResponseData] = useState([]);
 
-  const API_URL = "http://localhost:8081/api/admin/monitoring/health";
+  const API_URL = `${process.env.REACT_APP_API_URL}/api/admin/monitoring/health`;
 
   // Generate mock data for charts
   const generateMockData = () => {

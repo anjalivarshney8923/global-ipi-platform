@@ -26,7 +26,7 @@ const AdminFinanceManagement = () => {
   });
   const [newFeature, setNewFeature] = useState("");
 
-  const API_BASE = "http://localhost:8081/api/admin/subscriptions";
+  const API_BASE = `${process.env.REACT_APP_API_URL}/api/admin/subscriptions`;
 
   const fetchAllData = async () => {
     try {

@@ -24,7 +24,7 @@ export const SubscriptionProvider = ({ children }) => {
       const token = localStorage.getItem('token');
       if (!token) return;
 
-      const response = await axios.get('http://localhost:8081/api/users/me', {
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/users/me`, {
         headers: { Authorization: `Bearer ${token}` }
       });
 
@@ -49,7 +49,7 @@ export const SubscriptionProvider = ({ children }) => {
       // Frontend uses: basic, pro, enterprise
       const normalizedPlan = plan.charAt(0).toUpperCase() + plan.slice(1);
 
-      await axios.put(`http://localhost:8081/api/users/upgrade-subscription?planName=${normalizedPlan}`, {}, {
+      await axios.put(`${process.env.REACT_APP_API_URL}/api/users/upgrade-subscription?planName=${normalizedPlan}`, {}, {
         headers: { Authorization: `Bearer ${token}` }
       });
 

@@ -6,8 +6,8 @@ import {
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend 
 } from 'recharts';
 
-const API_URL = "http://localhost:8081/api/admin/patent-filings";
-const BASE_URL = "http://localhost:8081";
+const API_URL = `${process.env.REACT_APP_API_URL}/api/admin/patent-filings`;
+const BASE_URL = process.env.REACT_APP_API_URL;
 
 const AdminFilingsManagement = () => {
   const [activeTab, setActiveTab] = useState("filings");

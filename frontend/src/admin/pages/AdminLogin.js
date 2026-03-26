@@ -48,7 +48,7 @@ const AdminLogin = () => {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:8081/auth/admin/login", {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/auth/admin/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
