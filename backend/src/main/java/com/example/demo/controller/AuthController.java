@@ -20,7 +20,6 @@ import java.util.Map;
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*")
 public class AuthController {
 
     private final AuthenticationManager authenticationManager;
@@ -71,7 +70,6 @@ public class AuthController {
 
             UserDetails user = (UserDetails) auth.getPrincipal();
 
-            // Check if user has admin role
             boolean isAdmin = user.getAuthorities().stream()
                     .anyMatch(a -> a.getAuthority().equals("ROLE_ADMIN"));
 
