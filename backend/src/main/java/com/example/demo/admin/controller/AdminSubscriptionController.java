@@ -13,15 +13,15 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
-@RestController
-@RequestMapping("/api/admin/subscriptions")
-@RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:3000")
-public class AdminSubscriptionController {
+    @RestController
+    @RequestMapping("/api/admin/subscriptions")
+    @RequiredArgsConstructor
+    @CrossOrigin(origins = "*")
+    public class AdminSubscriptionController {
 
-    private final SubscriptionPlanRepository planRepository;
-    private final SubscriptionHistoryRepository historyRepository;
-    private final UserRepository userRepository;
+        private final SubscriptionPlanRepository planRepository;
+        private final SubscriptionHistoryRepository historyRepository;
+        private final UserRepository userRepository;
 
     @jakarta.annotation.PostConstruct
     public void init() {

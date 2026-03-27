@@ -21,7 +21,9 @@ public class SubscriptionControllerIntegrationTest {
 
     private final RestTemplate rest = new RestTemplate();
 
-    private String base() { return "http://localhost:" + port; }
+   private String base() {
+    return System.getenv("BASE_URL");
+}
 
     @Test
     void register_login_subscribe_list_flow() {

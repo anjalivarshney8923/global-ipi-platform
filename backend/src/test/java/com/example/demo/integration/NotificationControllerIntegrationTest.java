@@ -25,8 +25,9 @@ public class NotificationControllerIntegrationTest {
     private NotificationRepository notificationRepository;
 
     private final RestTemplate rest = new RestTemplate();
-
-    private String base() { return "http://localhost:" + port; }
+private String base() {
+    return System.getenv("BASE_URL");
+}
 
     @Test
     void broadcast_creates_notifications_for_subscribers() throws Exception {
